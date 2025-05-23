@@ -60,9 +60,9 @@ rm -f "$CURL_OUTPUT"
 chmod +x "$BINARY_NAME"
 
 if [ "$(whoami)" != "root" ]; then
-    sudo ./"$BINARY_NAME" --protocol https --allow-root --disable-comments-in-file --save /etc/pacman.d/mirrorlist arch
+    sudo ./"$BINARY_NAME" --protocol https --allow-root --disable-comments --save /etc/pacman.d/mirrorlist arch
 else
-    ./"$BINARY_NAME" --protocol https --allow-root --disable-comments-in-file --save /etc/pacman.d/mirrorlist arch
+    ./"$BINARY_NAME" --protocol https --allow-root --disable-comments --save /etc/pacman.d/mirrorlist arch
 fi
 
 rm -f "$BINARY_NAME"
