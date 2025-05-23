@@ -1,3 +1,3 @@
-name = "update-mirror"
+name = "update-mirrors"
 main = "src/index.js"
 compatibility_date = "2025-05-23"
